@@ -1,0 +1,15 @@
+<?php
+
+$servidor="localhost"; // 127.0.0.1
+$baseDeDatos="tienda";
+$usuario="root";
+$contrasenia="password123";
+
+
+try{
+$conexion= new PDO("mysql:host=$servidor;dbname=$baseDeDatos",$usuario,$contrasenia);
+}catch(Exception $ex){
+    echo $ex->getMessage();
+}
+
+?>
